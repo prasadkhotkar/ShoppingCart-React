@@ -14,29 +14,29 @@ const Cart = () => {
       setTotalAmount(Cart.reduce( (acc,curr) => acc+curr.price,0) );
     },[Cart])
     return(
-      <div>
+      <div className='flex justify-between items-center max-w-6xl p-2 mx-auto '>
         {
           Cart.length > 0 ?
           (
-            <div> 
-              <div>
+            <div className='flex  '> 
+              <div >
                 {
                   Cart.map((item,index)=>{
                     return <CartItem key={item.id} item={item} itemIndex={index} />
                   })
                 }
               </div>
-              <div>
-                <div>
-                  <div>Your Cart</div>
-                  <div>Summary</div>
-                  <p>
-                    <span>Total Items:{Cart.length}</span>
+              <div className='flex flex-col justify-between mt-20  mx-3'>
+                <div className=''>
+                  <div className='text-green-700 font-semibold text-lg'>Your Cart</div>
+                  <div className='text-green-700 font-bold text-4xl' >SUMMARY</div>
+                  <p className='mt-3'>
+                    <span className='font-semibold '>Total Items:{Cart.length}</span>
                   </p>
                 </div>
-                <div>
-                 <p>Total Amount: ${totalAmount}</p>
-                 <button>
+                <div className='flex flex-col gap-2'>
+                 <p className='  font-semibold'>Total Amount: ${totalAmount}</p>
+                 <button className=' font-semibold text-white border-2 border-gray-700 bg-green-600 rounded-md  text-[15px] p-1 px-20 '>
                   Checkout Now
                  </button>
                 </div>
@@ -45,10 +45,10 @@ const Cart = () => {
             
           ):
           (
-            <div>
-              <h1>cart Empty</h1>
+            <div className='flex flex-col  items-center justify-center max-w-6xl  p-2 mx-auto space-x-5 space-y-2 min-h-[80vh]'>
+              <h1 className='text-lg font-semibold'>Cart Empty</h1>
               <Link to={"/"}>
-                <button>
+                <button className=' font-semibold text-white border-2 border-gray-700 bg-green-600 rounded-md  text-[15px] p-1 px-10 '>
                   Shop Now
                 </button>
               </Link>
