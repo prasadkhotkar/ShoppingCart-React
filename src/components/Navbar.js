@@ -19,7 +19,7 @@ const Navbar = () => {
         <NavLink to="/">
         <p>Home</p>
         </NavLink>
-        <NavLink to="/Cart">
+        <NavLink to="/cart">
             <div className='relative'>
         <BsCart4 className='text-2xl' />
         <span className='absolute -top-1 bg-green-600 text-xs w-5 h-5 flex justify-center items-center animate-bounce rounded-full text-white'>{Cart.length >0 && Cart.length}</span>
