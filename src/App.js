@@ -14,11 +14,15 @@ const App = () => {
       <div className='bg-slate-900 '>
         <Navbar/>
       </div>
+      <div>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/cart" element={<Cart/>}/>
       </Routes>
-    
+      </div>
+      <div>
+        <Home/>
+      </div>
     </div>
   )
 }
