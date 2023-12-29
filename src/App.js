@@ -20,9 +20,11 @@ const App = () => {
         <Route path="/cart" element={<Cart/>}/>
       </Routes>
       </div>
-      
+      <div>
+        <Cart/>
+      </div>
     </div>
   )
 }
 
-export default App
+export default App;
