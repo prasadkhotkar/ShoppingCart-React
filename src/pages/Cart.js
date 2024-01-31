@@ -26,6 +26,7 @@ const Cart = () => {
                   })
                 }
               </div>
+        ||
               <div className='flex flex-col justify-between mt-20  mx-3'>
                 <div className=''>
                   <div className='text-green-700 font-semibold text-lg'>Your Cart</div>

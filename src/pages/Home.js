@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useEffect } from 'react';
 import Spinner from "../components/Spinner";
 import Product from "../components/Product";
+import Cart from './Cart';
 
 const Home = () => {
     const API_URL = "https://fakestoreapi.com/products";

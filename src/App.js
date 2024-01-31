@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import Home from './pages/Home';
 import Cart from './pages/Cart';
+import Product from './components/Product';
 
 
 const App = () => {
@@ -14,16 +15,15 @@ const App = () => {
       <div className='bg-slate-900 '>
         <Navbar/>
       </div>
-      <div>
+      
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/cart" element={<Cart/>}/>
-      </Routes>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/cart" element={<Cart/>}/>
+   </Routes>
+      
+     
+      
       </div>
-      <div>
-        <Cart/>
-      </div>
-    </div>
   )
 }
 
