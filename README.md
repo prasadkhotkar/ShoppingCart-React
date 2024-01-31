@@ -1,3 +1,3 @@
 #ShoppingCart-React
 
- https://prasadkhotkar.github.io/ShoppingCart-React/
+https://prasadkhotkar.github.io/ShoppingCart-React/
